@@ -10,6 +10,7 @@
     "storybook:dev": "storybook dev -p 6006",
     "storybook:build": "storybook build",
     "test": "web-test-runner lib/**/*.test.js --coverage --node-resolve",
+    "test:ci": "npx puppeteer browsers install chrome && web-test-runner lib/**/*.test.js --coverage --node-resolve --puppeteer",
     "test:watch": "web-test-runner lib/**/*.test.js --node-resolve --watch",
     "types:gen": "tsc"
   },
@@ -25,6 +26,7 @@
     "@storybook/web-components-vite": "^7.6.17",
     "@types/jest": "^29.5.12",
     "@web/test-runner": "^0.18.0",
+    "@web/test-runner-puppeteer": "^0.16.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sinon": "^17.0.1",
