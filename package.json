@@ -1,0 +1,35 @@
+{
+  "name": "mnml",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "storybook:dev": "storybook dev -p 6006",
+    "storybook:build": "storybook build",
+    "test": "web-test-runner lib/**/*.test.js --coverage --node-resolve",
+    "test:watch": "web-test-runner lib/**/*.test.js --node-resolve --watch",
+    "types:gen": "tsc"
+  },
+  "dependencies": {
+    "lit": "^3.1.0"
+  },
+  "devDependencies": {
+    "@open-wc/testing": "^4.0.0",
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/web-components": "^7.6.17",
+    "@storybook/web-components-vite": "^7.6.17",
+    "@types/jest": "^29.5.12",
+    "@web/test-runner": "^0.18.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sinon": "^17.0.1",
+    "storybook": "^7.6.17",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  }
+}
